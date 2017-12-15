@@ -11,14 +11,14 @@ namespace Tuan_3___Lab_2.App
     {
         private BookList booklist = new BookList();
 
-        //Input
-        public void Input()
+        //Chạy chương trình
+        public void Run()
         {
             int Choose = -1;
 
             do
             {
-                Console.WriteLine("1. Nhap danh sach");
+                Console.WriteLine("\n1. Nhap danh sach");
                 Console.WriteLine("2. Xuat danh sach");
                 Console.WriteLine("3. Thoat");
                 Console.Write("Chon Thao Tac: ");
@@ -58,13 +58,7 @@ namespace Tuan_3___Lab_2.App
                     default:
                         break;
                 }
-            } while (true);
-        }
-
-        //Output - Show
-        public void Show()
-        {
-
+            } while (Choose != -1);
         }
     }
 }

@@ -31,7 +31,7 @@ namespace Tuan_3___Lab_2.App
         {
             foreach (Book book in books)
             {
-                Console.WriteLine("--------------");
+                Console.WriteLine("-----Danh sach Sach-----");
                 book.Show();
             }
         }

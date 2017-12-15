@@ -37,27 +37,21 @@ namespace Tuan_3___Lab_2.Entities
             ISBN = Console.ReadLine();
             Console.Write("Title: ");
             Title = Console.ReadLine();
-            //Console.WriteLine("Chapter: ");
+            Console.WriteLine("So luong Chapter: (EXIT if NULL)");
+
             //Nhập Chapter, Exit if NULL
             string str;
             int i = 0;
             do
             {
-                //do
-                //{
-                    Console.Write("Chapter {0} - Name: ", i + 1);
-                    str = Console.ReadLine();
-                    if (int.TryParse(Console.ReadLine(), out i))
-                    {
-                        Console.WriteLine("Xin nhay nhap so tu nhien!");
-                    }
-                //}while()
+                Console.Write("Chapter {0} - Name: ", i + 1);
+                str = Console.ReadLine();
                 if(str.Length > 0)
                 {
-                    chapters[i] = str;
+                    chapters.Add(str);
                     i++;
                 }
-            } while (true);
+            } while (str.Length > 0);
         }
 
         //Output - Show
@@ -69,7 +63,7 @@ namespace Tuan_3___Lab_2.Entities
 
             foreach (var item in chapters)
             {
-                Console.Write("\t");
+                Console.Write("", chapters);
                 Console.WriteLine(item);
             }
         }

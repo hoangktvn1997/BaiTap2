@@ -12,7 +12,7 @@ namespace Tuan_3___Lab_2
         static void Main(string[] args)
         {
             BookManager app = new BookManager();
-            app.Input();
+            app.Run();
 
             //Dừng màn hình để xem kết quả
             Console.ReadLine();
